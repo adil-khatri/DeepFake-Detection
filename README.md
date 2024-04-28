@@ -71,6 +71,7 @@ Detecting deep fake videos and images has become increasingly challenging with t
 ### For Machine Learning Models
 
 ### 1. Xception Image Detection:
+#### - Since the Model can't be uploaded on github due to exceed in size limit. Feel free to contact me via email.
 - Run the xception_image_detection.py file to predict whether an image contains a deepfake or not using the Xception pre-trained model.
 - Ensure you have the necessary dependencies installed, including TensorFlow 2.16.1.
 - Pass the image file as input to the script for prediction.
