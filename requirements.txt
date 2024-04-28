@@ -4,3 +4,6 @@ pip install pandas
 pip install scikit-learn
 pip install tensorflow
 pip install Pillow
+pip install matplotlib
+
+#!pip install -U --upgrade tensorflow
