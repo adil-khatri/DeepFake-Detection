@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake Detection</title>
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet"> -->
+    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
+</head>
+</head>
+
+<body style="background-color: #f0f0f0;">
+<!-- ********** -->
+<nav class="navbar">
+		<div class="navdiv">
+			<div class="logo"><a href="#">Detect Now</a> </div>
+			<ul>
+				<li><a href="#">Solutions</a></li>
+				<li><a href="#">Use Cases</a></li>
+				<li><a href="#deepfakes">Deepfakes</a></li>
+				<button><a href="#">SignIn</a></button>
+				<button><a href="#">SignUp</a></button>
+			</ul>
+		</div>
+	</nav>
+<!-- ********Left and right container****** -->
+<div class="container-11">
+    <div class="left-side">
+        <img src="https://assets-global.website-files.com/6138b92fa61fab29531ddd89/63f737372eb7d570261e39b6_image-4.webp"" alt="Your Image">
+    </div>
+    <div class="right-side">
+      <h1>AI Deepfake Detection Made<br>Easy with <span>DeepDetector</span> Software</h1>
+      <br>
+      <p>In today's digital era, the threat of deepfake technology is at large, posing significant risks. Our deepfake detection software offers a solution to accurately identify manipulated content</p>
+      <button class="btn-detect"><a href="#upload-section">Detect Now</a></button>
+    </div>
+</div>
+  <!-- ************THIS IS WORKING****************** -->
+    <!-- <h1>Detect your image in a second</h1>
+    <p>Upload any <span class="typed-text"></span><span class="cursor1">&nbsp;</span></p>
+    <div class="upload-div" style="text-align: center; margin-top: 50px;">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*"><br><br>
+            <button type="submit">Upload</button>
+        </form>
+    </div> -->
+    <!-- ******************* -->
+     <div class="container center" >
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="white" id="upload-section">Custom File Upload</h1>
+                <p class="white" style="font-size: 20px;">In this example, submit is allowed only in case the user
+                    uploads a valid image file.</p>
+            </div>
+        </div>
+
+        <form action="/upload" method="post" action="#" enctype="multipart/form-data" accept-charset="utf-8">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 center">
+                    <div class="btn-container">
+                        <!--the three icons: default, ok file (img), error file (not an img)-->
+                        <h1 class="imgupload"><i class="fa fa-file-image-o"></i></h1>
+                        <h1 class="imgupload ok"><i class="fa fa-check"></i></h1>
+                        <h1 class="imgupload stop"><i class="fa fa-times"></i></h1>
+                        <!--this field changes dinamically displaying the filename we are trying to upload-->
+                        <p id="namefile" style="font-size: 16px;">Only pics allowed! (jpg,jpeg,bmp,png)</p>
+                        <!--our custom btn which which stays under the actual one-->
+                        <button type="button" id="btnup" class="btn btn-primary btn-lg">Browse for your pic!</button>
+                        <!--this is the actual file input, is set with opacity=0 beacause we wanna see our custom one-->
+                        <input type="file" value="" name="file" id="file" value='HHHHHHHHARSHHHH'>
+                    </div>
+                </div>
+            </div>
+            <!--additional fields-->
+            <div class="row">
+                <div class="col-md-12">
+                    <!--the defauld disabled btn and the actual one shown only if the three fields are valid-->
+                    <input type="submit" value="DetectNow!" class="btn btn-primary" id="submitbtn">
+                    <button type="button" class="btn btn-default" disabled="disabled" id="fakebtn">Detect Now</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- ********Left and right video container****** -->
+    <div class="container-11 video-container" id="deepfakes" style="margin-top:100px; background-color:white;">
+        <div class="left-side" style="color:black;">
+          <h1><span class="video-span">Generative AI </span>& <span class="video-span">Deepfake Detection</span> Software</h1>
+          <br>
+          <p>Deepfakes introduce a new form of disinformation, presenting altered or fabricated content designed to influence perspectives. With the rise of Generative AI, deepfake technology has become widely accessible. However, this accessibility also raises concerns about potential abuse. This is why we developed our AI detection tool to safeguard against such abuse.
+        </div>
+        <div class="right-side">
+          <img class="video-gif" src="https://assets-global.website-files.com/6138b92fa61fab29531ddd89/63078c0558bb9089d131774e_ezgif.com-gif-maker.gif" alt="Your Image">
+        </div>
+    </div>
+<!-- ******************** -->
+    <!-- ************3 images***********8 -->
+    <div style="background-color:#1E2647;" class="image-gallery">
+      <div class="galery-content">
+        <h2>Detecting Generative AI and Deepfakes</h2>
+        <p>In addition to traditional deepfakes, our detection capabilities also extend to content generated by other generative AI models, such as Dall-E and Midjourney. Our technology identifies the subtle nuances and patterns that distinguish AI-generated images from real photography, ensuring that you can reliably discern authentic content from synthetic creations.</p>
+        <p>Here are examples of the output from our detection tools</p>
+      </div>
+      <div class="image-container">
+        <img src="https://assets-global.website-files.com/6138b92fa61fab29531ddd89/6540f38a0b31706d2a7d3e56_1.webp" alt="Image 1">
+        <img src="https://assets-global.website-files.com/6138b92fa61fab29531ddd89/654217e2fecb56b6ff31d7c2_4.webp" alt="Image 2">
+        <img src="https://assets-global.website-files.com/6138b92fa61fab29531ddd89/65649317711bbc1e1ee4492b_99%25.webp" alt="Image 3">
+      </div>
+    </div>
+
+    <div class="flow-div">
+      <h2>How DeepDetector detect deepfakes</h2>
+      <img src="https://assets-global.website-files.com/6138b92fa61fab29531ddd89/6413050bb78238427ddd34b3_Section%201.webp">
+       <div class="galery-content">
+        <p>DeepDetector detects deepfake faces in videos and pictures with an accuracy of 95%. Our technology does not only classify an input as fake, but also explains the reasoning behind its decision by using Activation Maps. It is able to do this, because the DeepDetector has seen hundreds of thousands of real and deepfake images. It has trained itself on these images and has learned to find the subtle differences between a photo made with a real camera or a photo synthesised by a computer.</p>
+      </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+     // JS for [Upload any .txt/.vtt...]
+            const typedTextSpan = document.querySelector(".typed-text");
+            const cursorSpan = document.querySelector(".cursor1");
+
+            const textArray = [".txt file", ".docx file", ".pdf file", ".vtt file"];
+            const typingDelay = 150;
+            const erasingDelay = 100;
+            const newTextDelay = 1000; // Delay between current and next text
+            let textArrayIndex = 0;
+            let charIndex = 0;
+
+      // **************This script for upload div***********************
+        $(document).ready(function() {
+            $('#file').change(function() {
+                //here we take the file extension and set an array of valid extensions
+                var res = $('#file').val();
+                var arr = res.split("\\");
+                var filename = arr.slice(-1)[0];
+                filextension = filename.split(".");
+                filext = "." + filextension.slice(-1)[0];
+                valid = [".jpg", ".png", ".jpeg", ".bmp"];
+                //if file is not valid we show the error icon, the red alert, and hide the submit button
+                if (valid.indexOf(filext.toLowerCase()) == -1) {
+                    $(".imgupload").hide("slow");
+                    $(".imgupload.ok").hide("slow");
+                    $(".imgupload.stop").show("slow");
+                    $('#namefile').css({
+                        "color": "red",
+                        "font-weight": 700
+                    });
+                    $('#namefile').html("File " + filename + " is not  pic!");
+                    $("#submitbtn").hide();
+                    $("#fakebtn").show();
+                } else {
+                    //if file is valid we show the green alert and show the valid submit
+                    $(".imgupload").hide("slow");
+                    $(".imgupload.stop").hide("slow");
+                    $(".imgupload.ok").show("slow");
+                    $('#namefile').css({
+                        "color": "green",
+                        "font-weight": 700
+                    });
+                    $('#namefile').html(filename);
+                    $("#submitbtn").show();
+                    $("#fakebtn").hide();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+

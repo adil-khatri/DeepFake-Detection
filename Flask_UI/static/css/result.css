@@ -1,0 +1,119 @@
+ body{
+    margin:0;
+    padding:0;
+  }
+		*{
+			text-decoration: none;
+      margin:0px;
+      padding:0px;
+      font-family: DM Sans, sans-serif;
+		}
+		.navbar{
+			background: #1E2647; 
+      font-family: calibri; 
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-bottom: -10px;
+      position: fixed;
+      top:0;
+      left:0;
+      width:100%;
+      z-index: 1000;
+		}
+		.navdiv{
+			display: flex; 
+      align-items: center; 
+      justify-content: space-between;
+      height: 100px;
+      padding-left: 25px;
+      padding-right: 40px;
+      margin-bottom: -10px;
+		}
+		.logo a{
+			font-size: 35px; 
+      font-weight: 600; 
+      color: white;
+		}
+		li{
+			list-style: none; 
+      display: inline-block;
+		}
+		li a{
+			color: white; 
+      font-size: 18px; 
+      font-weight: bold; 
+      margin-right: 25px;
+		}
+		.navbar button{
+			background-color: #00B3BE; 
+      margin-left: 10px; 
+      border-radius: 5px; 
+      padding: 10px; 
+      width: 90px;
+      border:none;
+		}
+		
+    .navbar button a{
+			color: white; 
+      font-weight: bold; 
+      font-size: 15px;
+		}
+     /* **********left and right container*********** */
+    .container-11{
+      background-color:#0C162E;
+      display: flex;
+      height:660px;
+      gap: 20px; 
+      color:white;
+      padding:40px 100px 30px 100px;
+    }
+    .left-side {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .right-side {
+      margin-top:140px;
+      flex: 1;
+    }
+    .image-container {
+      width: 70%; /* Set the fixed width */
+      height: 70%; /* Set the fixed height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container-11 .image-container img {
+      max-width: 100%; /* Ensure the image doesn't exceed the container width */
+      max-height: 100%; /* Ensure the image doesn't exceed the container height */
+      height: auto; /* Maintain aspect ratio */
+      display: block; /* Remove default inline styles */
+      margin: auto; /* Center the image horizontally and vertically */
+    }
+    .container-11 h1{
+      font-size:38px;
+      font-weight: 700;
+      line-height: 44px;
+    }
+    .container-11 span{
+      color:red;
+    }
+    .container-11 button{
+			background-color: #00B3BE; 
+      margin-top:20px;
+      border-radius: 5px; 
+      padding: 10px; 
+      width: 120px;
+      border:none;
+		}
+    .container-11 button a{
+			color: white; 
+      font-weight: bold; 
+      font-size: 15px;
+		}
+
+    .right-side p{
+      font-size:20px;
+    }
+    *********************

@@ -60,13 +60,55 @@ Detecting deep fake videos and images has become increasingly challenging with t
 |             Obama DeepFake Prediction            |               Adil Real Prediction               |   
 
 
+- **Integration with Flask**
+
+<img src="./Outputs/webpage1.png" width="1000">
+
+<img src="./Outputs/webpage2.png" width="1000">
+
+<img src="./Outputs/Adil_Prediction.png" width="1000">
+
+<img src="./Outputs/Harsh_Prediction.png" width="1000">
+
+<img src="./Outputs/webpage3.png" width="1000">
+
+
+## Technology stack
+
+Tools and technologies that you learnt and used in the project.
+
+1. Python Flask
+2. Tensorflow
+3. Google Collab
+4. Kaggle Notebook
+5. FaceForensic++, DFDC datasets
+6. CNN, RNN Architectures
+
 ## Project Setup
 
-- To run this project, TensorFlow version 2.1.6 is required. Users can utilize platforms such as Google Colab or Kaggle notebooks to access GPU resources for faster computation. 
+### Run Locally
+
+- To run this project, TensorFlow version 2.16.1 is required. Users can utilize platforms such as Google Colab or Kaggle notebooks to access GPU resources for faster computation.
+- > Open Google Colab -> Select Upload -> upload .pynb files (for eg. xception_image_Detection.ipynb) -> Load Model (.h5) -> Give path of input image/video -> Run the code
 - Additionally, the project includes a Models folder containing the implementations of three models: DenseNet, Xception, and InceptionV3, tailored specifically for detecting deepfake images and videos.
 - These models serve as powerful tools for accurately identifying manipulated content and are readily available for integration into various applications and projects aimed at combating the proliferation of deepfake media.
 - Also, you can utilize image models, videos are converted into frames, and bagging boosting techniques can be applied to enhance accuracy on random frame subsets and aggregating predictions, thereby improving deepfake video detection.
 
+### Running Flask UI on Google Colab
+
+- This repository demonstrates how to run a Flask web application on Google Colab using ngrok for tunneling. This approach is particularly useful for environments where running Flask locally is not feasible or convenient, such as when utilizing specific libraries like TensorFlow within a Colab environment.
+  > #### Upload the Files to Google Drive:
+  > - Upload the entire folder named "Flask_UI" to your Google Drive.
+
+  > #### Open Colab Notebook:
+  > - Open Google Colab and select the "Flask_Colab.ipynb" file from your Google Drive.
+
+  > #### Install Dependencies:
+  > - Run the notebook and install necessary dependencies. Ensure that you have all the required libraries installed, including Flask and Flask-ngrok.
+
+  > #### Accessing the Xception Model:
+  > - The Flask application requires access to an Xception model stored on Google Drive, send a request for access to the shared drive where the model is stored.
+  > - Link: https://drive.google.com/drive/folders/1DtNLKAVUmHkDrXgHj-CIuYqCBpdBHgZ3?usp=sharing
 
 ### For Machine Learning Models
 

@@ -1,0 +1,306 @@
+
+
+  body{
+    margin:0;
+    padding:0;
+  }
+		*{
+			text-decoration: none;
+      margin:0px;
+      padding:0px;
+      font-family: DM Sans, sans-serif;
+		}
+		.navbar{
+			background: #1E2647; 
+      font-family: calibri; 
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-bottom: -10px;
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      z-index: 1000;
+		}
+		.navdiv{
+			display: flex; 
+      align-items: center; 
+      justify-content: space-between;
+      height: 100px;
+      padding-left: 25px;
+      padding-right: 40px;
+      margin-bottom: -10px;
+		}
+		.logo a{
+			font-size: 35px; 
+      font-weight: 600; 
+      color: white;
+		}
+		li{
+			list-style: none; 
+      display: inline-block;
+		}
+		li a{
+			color: white; 
+      font-size: 18px; 
+      font-weight: bold; 
+      margin-right: 25px;
+		}
+		.navbar button{
+			background-color: #00B3BE; 
+      margin-left: 10px; 
+      border-radius: 5px; 
+      padding: 10px; 
+      width: 90px;
+      border:none;
+		}
+		
+    .navbar button a{
+			color: white; 
+      font-weight: bold; 
+      font-size: 15px;
+		}
+    /* **********left and right container*********** */
+    .container-11{
+      background-color:#0C162E;
+      display: flex;
+      height:750px;
+      gap: 20px; 
+      color:white;
+      padding:40px 100px 30px 100px;
+      padding-top:120px;
+    }
+    .left-side {
+        flex: 1;
+    }
+    .right-side {
+        flex: 1;
+    }
+
+     .container-11 .right-side p{
+      font-size:16px;
+     }
+    .container-11 img {
+        max-width: 70%; /* Ensure the image doesn't exceed the container width */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove default inline styles */
+        margin: 0 auto; /* Center the image horizontally */
+        margin-top:60px;
+    }
+    .container-11 h1{
+      font-size:38px;
+      font-weight: 700;
+      line-height: 44px;
+      margin-top:120px;
+    }
+    .container-11 span{
+      color:#00b3be;
+    }
+
+    .container-11 .video-span{
+      color:#00b3be;
+    }
+    .container-11 button{
+			background-color: #00B3BE; 
+      margin-top:20px;
+      border-radius: 5px; 
+      padding: 10px; 
+      width: 120px;
+      border:none;
+		}
+    .container-11 button a{
+			color: white; 
+      font-weight: bold; 
+      font-size: 15px;
+		}
+    .comtainer-11 .video-gif{
+      width:90%;
+    }
+      /**video div**/
+    .video-container img{
+      max-width:100%;
+      padding:35px;
+    }
+    .video-container p{
+      margin-bottom: 10px;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 29px;
+    }
+
+  /* ***********For upload style**************** */
+  /* .upload-div{
+    width:600px;
+    background-color:red;
+    height:300px;
+    margin: 50px auto 0;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  } */
+  /* *************************** */
+  /*just bg and body style*/
+  .container{
+    background-color:#1E2832;
+    padding-bottom:20px;
+    margin-top:80px;
+    border-radius:5px;
+    }
+
+    .container .row{
+      padding: 20px;
+
+    }
+    .center{
+    text-align:center;  
+    }
+    #top{
+    margin-top:20px;  
+    }
+     .btn-container{
+    background:#fff;
+    border-radius:5px;
+    padding-bottom:20px;
+    margin-bottom:20px;
+    }
+    .white{
+    color:white;
+    }
+    .imgupload{
+    color:#1E2832;
+    padding-top:40px;
+    font-size:7em;
+    }
+    #namefile{
+    color:black;
+    }
+    h4>strong{
+    color:#ff3f3f
+    }
+    .btn-primary{
+    border-color: #ff3f3f !important;
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #ff3f3f !important;
+    border-color: #ff3f3f !important;
+    }
+    
+    /*these two are set to not display at start*/
+    .imgupload.ok{
+    display:none;
+    color:green;
+    }
+    .imgupload.stop{
+    display:none;
+    color:red;
+    }
+    
+    
+    /*this sets the actual file input to overlay our button*/ 
+    #file{
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    width:200px;
+    cursor: pointer;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    height: 50px;
+    }
+    
+    /*switch between input and not active input*/
+    #submitbtn{
+      padding:5px 50px;
+      display:none;
+    }
+    #fakebtn{
+      padding:5px 40px;
+    }
+    
+    
+    /*www.emilianocostanzo.com*/
+    #sign{
+        color:#1E2832;
+        position:fixed;
+        right:10px;
+        bottom:10px;
+        text-shadow:0px 0px 0px #1E2832;
+        transition:all.3s;
+    }
+    #sign:hover{
+        color:#1E2832;
+        text-shadow:0px 0px 5px #1E2832;
+    }
+
+/************************/
+.image-gallery{
+  font-family: DM Sans, sans-serif;
+  color:white;
+  padding-left:100px;
+  padding-right:100px;
+  padding-top:40px;
+}
+
+.galery-content{
+  width:60%;
+  text-align:justify;
+}
+.image-gallery h2{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.image-gallery p{
+    font-size: 17px;
+}
+
+.image-gallery p{
+      color: rgba(246, 247, 249, .87);
+    margin-bottom: 10px;
+  
+    font-weight: 400;
+    line-height: 29px;
+}
+.image-gallery .image-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:50px;
+    }
+    .image-gallery  .image-container img {
+        max-width: 30%; /* Adjust as needed */
+        height: auto;
+        border-radius:10px
+    }
+/**********flow div**************/
+  .flow-div{
+    background-color:white;
+    height:1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:black;
+  }
+  .flow-div h2{
+    text-align: left;
+    margin-top: 40px;
+    margin-botton:100px;
+    font-size: 38px;
+    line-height: 44px;
+    margin-bottom: 20px;
+  }
+  .flow-div p{
+    margin-top:20px;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+  } 
+  .flow-div img{
+    height:80%;
+  }
