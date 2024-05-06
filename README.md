@@ -28,7 +28,8 @@ Detecting deep fake videos and images has become increasingly challenging with t
 
 ## Links
 
-- GitHub Repo link: [Link to GitHub repository](https://github.com/adil-khatri/DeepFake-Detection-)
+- GitHub Repo link: [Link to GitHub repository](https://github.com/adil-khatri/DeepFake-Detection)
+- Bachelor's Thesis: [Link to Bachelor's Thesis](https://github.com/adil-khatri/DeepFake-Detection/blob/main/Bachelor's%20Thesis%20-%20Deepfake.pdf)
 
 
 ## Applications
